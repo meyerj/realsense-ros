@@ -10,7 +10,7 @@ path = r.get_path('realsense2_description')
 
 def run_xacro_in_file(filename):
     assert(filename != "")
-    assert(subprocess.check_output(["xacro", "--inorder", "tests/{}".format(filename)],
+    assert(subprocess.check_output(["xacro", "tests/{}".format(filename)],
                                    cwd=path))
 
 
